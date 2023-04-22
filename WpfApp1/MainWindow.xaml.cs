@@ -14,6 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Net.Http;
+using Microsoft.VisualBasic;
+using System.Security.Policy;
 
 namespace WpfApp1
 {
@@ -22,10 +25,14 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+
+
         public MainWindow()
         {
             InitializeComponent();
             
+           
             
         }
 
@@ -40,8 +47,8 @@ namespace WpfApp1
                 byte[] buffer = Encoding.Default.GetBytes(text);
 
                 await fileStream.WriteAsync(buffer, 0, buffer.Length);
-                
-                
+
+
 
             }
 
@@ -52,13 +59,27 @@ namespace WpfApp1
                 await fileStream1.ReadAsync(buffer, 0, buffer.Length);
 
                 string textFromFile = Encoding.Default.GetString(buffer);
-
+                FilePush();
             }
-
-            
-
 
 
         }
+
+        private static void FilePush()
+        {
+            string path = @"C:\Users\edgar\edankryzo.txt";
+
+           
+                var httpClient = new HttpClient();
+               httpClient.GetAsync("http://10.3.8.167:8080/");
+        
+
+        }
+
     }
+
+
+ 
+
+    
 }

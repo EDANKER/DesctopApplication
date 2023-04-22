@@ -20,7 +20,7 @@
              <TextBlock></TextBlock>
         </Button>
         <Button x:Name="ButtonCommandDDos" IsCancel="True" Width="200px" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 0 " Click="Button_Click" >
-             <TextBlock x:Name="textblock">erogjrpeigher</TextBlock>
+            <TextBlock x:Name="textblock">Push</TextBlock>
         </Button>
       
         
