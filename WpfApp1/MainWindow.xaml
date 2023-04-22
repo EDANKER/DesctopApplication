@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Background="Bisque"
+        Title="edankryzo" Height="1920" Width="1080">
+            
+        
+    <Grid>
+       
+       
+        <Button Width="200px" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200px">
+             <TextBlock></TextBlock>
+        </Button> 
+        
+        <Button Width="200px" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200px, 100">
+             <TextBlock></TextBlock>
+        </Button>
+        <Button x:Name="ButtonCommandDDos" IsCancel="True" Width="200px" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 0 " Click="Button_Click" >
+             <TextBlock x:Name="textblock">erogjrpeigher</TextBlock>
+        </Button>
+      
+        
+    </Grid>
+</Window>
